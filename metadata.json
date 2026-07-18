@@ -1,0 +1,6 @@
+{
+  "name": "iORGANISE",
+  "description": "A premium, dark-themed event service booking and organizer management platform featuring interactive dashboards, service portfolios, and booking tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

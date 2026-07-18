@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-maroon-50: #ffffff;
+  --color-maroon-100: #f9fafb;
+  --color-maroon-200: #f3f4f6;
+  --color-maroon-300: #d1d5db;
+  --color-maroon-400: #9ca3af;
+  --color-maroon-500: #ef4444;
+  --color-maroon-600: #dc2626;
+  --color-maroon-700: #991b1b;
+  --color-maroon-800: #7f1d1d;
+  --color-maroon-900: #450a0a;
+  --color-maroon-950: #2d0505;
+  --color-maroon-black: #0a0a0a;
+  --color-maroon-dark: #111111;
+  --color-maroon-card: #1a1a1a;
+  --color-maroon-border: rgba(255, 255, 255, 0.08);
+
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef9c3;
+  --color-gold-200: #fef08a;
+  --color-gold-300: #fde047;
+  --color-gold-400: #facc15;
+  --color-gold-500: #facc15;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+  --color-gold-900: #713f12;
+}
+
+/* Custom styles for dark theme body */
+html, body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #120608;
+}
+::-webkit-scrollbar-thumb {
+  background: #31141a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #681c29;
+}
+
+/* Slide and fade animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
